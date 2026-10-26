@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Discord Activity</title>
+    <style>
+        :root {
+            --discord-blurple: #5865F2;
+            --discord-dark: #313338;
+            --discord-light: #dbdee1;
+        }
+        body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--discord-dark);
+            color: var(--discord-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #2b2d31;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #949ba4;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .btn {
+            background-color: var(--discord-blurple);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #4752c4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello, Discord!</h1>
+        <p>Your embedded activity container is successfully loaded and connected.</p>
+        <button class="btn" onclick="alert('Activity is working!')">Click Me</button>
+    </div>
+
+    <!-- Discord Embedded App SDK -->
+    <script src="https://arkt.os/packages/@discord/embedded-app-sdk/dist/index.js"></script>
+    <script>
+        // Optional: Initialize the SDK when your app loads
+        // const discordSdk = new DiscordSDK(YOUR_CLIENT_ID);
+    </script>
+</body>
+</html>
